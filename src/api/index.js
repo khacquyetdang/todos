@@ -30,13 +30,6 @@ const fakeDatabase = {
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve(), ms));
 
-/*
-function delay(ms) {
-    //return new Promise(resolve => setTimeout(resolve, ms));
-    return new Promise(function(resolve) {
-        setTimeout(resolve(), ms)
-    });
-}*/
 
 export function fetchTodos(filter) {
     return delay(500).then(() => {

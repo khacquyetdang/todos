@@ -9,20 +9,21 @@ class AddTodo extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
- handleSubmit() {
+ handleSubmit(e) {
    this.props.onAddClick(this.state.text);
    this.setState({ text: ''});
+   e.preventDefault();
  }
 
  render() {
    return (
-     <form className="form-horizontal" onSubmit={this.handleSubmit}>
-     <div className="controls form-inline">
-     <input type="text" className="form-control" onChange={ event => { this.setState({text : event.target.value}) }}
-     value={this.state.text}></input>
-     <button type="submit" className="btn btn-default">Add todo</button>
-     </div>
-     </form>
+       <form className="form-horizontal" onSubmit={this.handleSubmit}>
+           <div className="controls form-inline">
+               <input type="text" className="form-control" onChange={ event => { this.setState({text : event.target.value}) }}
+                   value={this.state.text}></input>
+               <button type="submit" className="btn btn-default">Add todo</button>
+           </div>
+       </form>
    );
  }
 }
