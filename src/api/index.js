@@ -3,27 +3,27 @@ import { FILTER_ALL, FILTER_ACTIVE, FILTER_COMPLETED } from '../constants.js';
 const fakeDatabase = {
     todos: [{
         id: v4(),
-        text: 'hey',
+        text: 'go shopping',
         completed: true
     },
     {
         id: v4(),
-        text: 'ho',
+        text: 'exercise at gym club',
         completed: false
     },
     {
         id: v4(),
-        text: 'blo',
+        text: 'swimming 1 hours',
         completed: true
     },
     {
         id: v4(),
-        text: 'cooking',
+        text: 'Finish the project',
         completed: false
     },
     {
         id: v4(),
-        text: 'let,s go',
+        text: 'go the parc with son',
         completed: true
     }]
 };
