@@ -23,12 +23,5 @@ class App extends Component {
         );
     }
 }
-function mapStateToProps(state)
-{
-    const {  visibilityFilter } = state;
-    return {
-        visibilityFilter
-    };
-}
 
-export default connect(mapStateToProps, {addTodo, toggleTodo}) (App);
+export default connect(null, {addTodo}) (App);
